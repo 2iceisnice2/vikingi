@@ -512,12 +512,22 @@ a{
 
 }
 
-@media(max-width:414px){
+@media(max-width: 414px){
     .seasons__item{
         height: 203px;
     }
 
+    .page-header{
+        height: 150vh;
+    }
     
+}
+
+
+@media(max-width: 360px){
+    .page-header{
+        height: 210vh;
+    }
 }
 /*end media*/
 
