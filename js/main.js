@@ -1,5 +1,10 @@
 $(function(){
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list_active')
+});
+
+
     $('[data-fancybox]').fancybox({
         youtube : {
             controls : 1,
