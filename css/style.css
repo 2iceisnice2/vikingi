@@ -330,6 +330,7 @@ a{
     margin-bottom: 15px;
 }
 
+
 /*start media*/
 
 
@@ -476,13 +477,18 @@ a{
         background-color: transparent;
         border: none;
         padding: 0;
+        outline: none;
     }
 
-    .menu__btn span {
+    .menu__btn-item {
         display: block;
         background-color: #fff;
         height: 3px;
         width: 100%;
+    }
+
+    .menu__btn-item_active {
+        display: none;
     }
 
     .menu__btn::after,
@@ -492,17 +498,32 @@ a{
         height: 3px;
         background-color: #fff;
         position: absolute;
+        transform: rotate(0deg);
+        transition: all .3s;
     }
 
     .menu__btn::before{
         top: 0;
         left: 0;
+        
     }
 
 
     .menu__btn::after{
         bottom: 0;
         left: 0;
+    }
+
+    
+    .menu__btn.menu__btn_active::after{
+        transform: rotate(45deg);
+        transition: all .3s;
+    }
+
+    .menu__btn.menu__btn_active::before{
+        transform: rotate(135deg);
+        top: 26px;
+        transition: all .3s;
     }
 
     .page-logo{
@@ -518,7 +539,7 @@ a{
     }
 
     .page-header{
-        height: 150vh;
+        height: 160vh;
     }
     
 }

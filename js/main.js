@@ -4,6 +4,13 @@ $(function(){
     $('.menu__list').toggleClass('menu__list_active')
 });
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__btn-item').toggleClass('menu__btn-item_active')
+  })
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__btn').toggleClass('menu__btn_active')
+  })
 
     $('[data-fancybox]').fancybox({
         youtube : {
